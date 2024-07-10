@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Static/img/Logo.jpg" sizes="32x32">
+  <link rel="icon" href="Static/img/Logo.jpg" sizes="192x192">
+
+  <link rel="shortcut icon" href="../Static/img/Logo.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="../Static/css/style.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <title>|| Ciclope Traslados S. A. | Unidades ||</title>
+</head>
+
+<body>
+  <!-- </header> -->
+  <header>
+
+    <!-- nav -->
+    <nav class="nav">
+      
+      <!-- Logo -->
+      <a href="index.html"><img src="../Static/img/Logo.jpg" alt="Imagen Logo" class="img-logo"></a>
+      
+      <div class="logo">
+        <a href="../index.html">|| Ciclope Traslados S. A. ||</a>
+      </div>
+      
+      <!-- Nav Items Link -->
+      <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Templates/Nosotros.html">Nosotros</a></li>
+        <li><a href="Galeria.html">Galeria</a></li>
+        <li><a href="../Templates/Contacto.html">Contacto</a></li>
+        <!-- <li><a href="../Templates/FormularioIngresar.html">|| Ingresar ||</a></li> -->
+      </ul>
+
+    </nav>
+
+
+  </header>
+
+  <section id="seccionGaleria" class="-galeria section">
+    <div class="galeria-titulo">
+      <p>
+        <center>
+          <h2>Nuestro Catalogo</h2>
+        </center>
+      </p>
+    </div>
+    <div class="separador">
+      <hr>
+      </hr>
+    </div>
+    <div class="galeria-texto">
+      <p>Nuestros 50 años de trayectoria nos permiten brindar un servicio de excelencia a cada uno de nuestros pasajeros
+        otorgando un traslado seguro y confortable. Contamos con un amplio staff de conductores profesionales y
+        bilingües con capacitaciones al día en Manejo Seguro, Ceremonial y Protocolo, Atención al Cliente VIP, Primeros
+        Auxilios, entre otras. Disponemos también de protocolos desarrollados para cuidar la salud e higiene de todos
+        nuestros stakeholders. Su seguridad es nuestro compromiso.</p>
+    </div>
+
+  </section>
+
+  <section class="contenido">
+    <div class="mostrador" id="mostrador" style="width: 100%;">
+      <div class="fila">
+        <div class="item" onclick="cargar(this)">
+          <div class="contenedor-foto">
+            <img src="../Static/img/auto1.png" alt="">
+          </div>
+          <p class="auto-descripcion">Camioneta Roja</p>
+          <span class="precio">Fiat</span>
+        </div>
+        <div class="item" onclick="cargar(this)">
+          <div class="contenedor-foto">
+            <img src="../Static/img/auto3.png" alt="">
+          </div>
+          <p class="auto-descripcion">Camioneta Azul</p>
+          <span class="precio">Renault</span>
+        </div>
+        <div class="item" onclick="cargar(this)">
+          <div class="contenedor-foto">
+            <img src="../Static/img/auto2.png" alt="">
+          </div>
+          <p class="auto-descripcion">Auto Rojo</p>
+          <span class="precio">Fiat</span>
+        </div>
+        <div class="item" onclick="cargar(this)">
+          <div class="contenedor-foto">
+            <img src="../Static/img/auto4.png" alt="">
+          </div>
+          <p class="auto-descripcion">Camioneta Gris</p>
+          <span class="precio">Renault</span>
+        </div>
+      </div>
+
+    </div>
+    <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+    <div class="seleccion" id="seleccion">
+      <div class="cerrar" onclick="cerrar()">
+        x<div id="x2715"></div>
+      </div>
+      <div class="info">
+        <img src="img/auto1" alt="" id="img">
+        <h2 id="modelo"> Modelo del remis</h2>
+        <p id="auto-descripcion">Descripción Modelo 1</p>
+
+        <span class="precio" id="precio"></span>
+
+        <div class="fila">
+          <div class="size">
+            <label for="">Pasajeros</label>
+            <select name="" id="">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+            </select>
+          </div>
+          <button>Solicitar Remis</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="containerFooter">
+      <div class="footer-row">
+
+        <div class="footer-links">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#seccionGaleria">Galeria</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#concepto">Concepto</a></li>
+            <li><a href="../Templates/FormularioCrear.html">Afiliate</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="">FAQ</a></li>
+            <li><a href="#form-escribenos">Consultas</a></li>
+            <li><a href="#sedes">Sedes</a></li>
+            <li><a href="">Ayudanos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Redes</h4>
+          <ul>
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://x.com/"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://ar.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Derechos Marca -->
+      <div class="formalidadesMR">
+        <i class="fa-solid "> || Derechos de autor &copy; 2024 - Ciclope S.A. ||</i>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="../Static/js/scrypt.js"></script>
+
+</body>
+
+</html>

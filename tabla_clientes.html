@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../Static/img/Logo.jpg" sizes="32x32">
+  <link rel="icon" href="../Static/img/Logo.jpg" sizes="192x192">
+  <!-- Palabras Claves -->
+  <meta name="keywords" content="Traslados, Viajes, Comodidad, Servicio, CLIENTES, CONDUCTORES">
+  <!-- Descripcion -->
+  <meta name="description" content="Servicio y Soluciones de Traslados Alta Gama, Viajes, Turismo, Blindados">
+
+  
+  <link rel="stylesheet" href="Static/css/tabla_clientes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>|| Ciclope Traslados S. A. - Registro de Clientes ||</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="Static/css/style.css">
+
+  <link rel="stylesheet" href="Static/css/ingresar_cliente.css">
+  <link rel="stylesheet" href="Static/css/tabla_clientes.css">
+</head>
+
+<header>
+  <div class="logo">
+    <a href="index.html">|| Ciclope Traslados S. A. ||</a>
+  </div>
+</header>
+
+<body>
+
+  <header id="header"></header>
+
+  <main>
+
+    <section class="container">
+      <div id="app">
+
+        <!-- Botón Nuevo -->
+        <a class="nuevo" href="Templates/ingresar_cliente.html">Nuevo Cliente</a>
+
+        <section v-if="error" style="font-size: 40px;"><br>Lo sentimos, se ha producido un Error!</section>
+        <section v-else>
+          <section v-if="cargando">
+            <p>Cargando .....</p>
+
+          </section>
+
+          <section v-else>
+
+            <div>
+              <table class="tabla">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Telefono</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Acciones</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr v-for="cliente in clientes">
+                    <td>{{cliente.id}}</td>
+                    <td>{{cliente.nombre}}</td>
+                    <td>{{cliente.telefono}}</td>
+                    <td>{{cliente.email}}</td>
+                    <td>{{cliente.password}}</td>
+                    <td>
+                      <button type="button" v-on:click="eliminar(cliente.id)">Eliminar</button>
+                    </td>
+                    <td>
+                      <a class="boton"
+                        :href="'Templates/editar_cliente.html?id='+ cliente.id+'&nombre=' +cliente.nombre+ '&telefono='+cliente.telefono+'&email='+cliente.email +  '&password='+cliente.password">Editar</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer></footer>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="Static/js/tabla_clientes.js"></script>
+  <script src="Static/js/header.js"></script>
+</body>
+
+</html>

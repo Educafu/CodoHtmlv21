@@ -1,0 +1,32 @@
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(38, 38, 38);
+    height: 80px;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+    height: 60px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.name {
+    margin-left: 120px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.nav-items > a {
+    margin-right: 20px;
+}
